@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://webchat.plugsocial.com.br/plug-modules.js"></script>
+<script src="https://webchat.plugsocial.com.br/chat.js"></script>
+<script>
+  const avatarUrl = "http://www.itaseixos.com.br/website/template/img/Chat---.png";
+  document.addEventListener("DOMContentLoaded", function () {
+    plugLoadChat({
+      tenant: '64482d74a662872da8d05feb', // NÃO ATERAR
+      bot: '644a8958a662872da854a9e0', // NÃO ALTERAR
+      ws: 'ws.plugsocial.com.br', // NÃO ALTERAR
+      widthSize: '480px', // Largura do chat
+      heightSize: '70%', // Altura do chat
+      showOpen: false, // Abrir ao carregar [true / false]
+      header: { // Cabeçalho
+        title: 'WEB CHAT - PLUG SOCIAL', // Título do cabeçalho
+        backgroundColor: 'rgb(175, 175, 175)', // Cor de fundo do cabeçalho
+        textColorBackground: '#ffffff', // Cor do texto do cabeçalho
+        botAvatarUrl: avatarUrl, // Url do avatar de cabeçalho
+      },
+      button: { // Botão de abertura
+        chatButtonLogoUrl: 'http://www.itaseixos.com.br/website/template/img/Chat---.png', // Logo do botão
+        chatButtonColor: 'rgb(250, 100, 0)', // Cor de fundo do botão
+      },
+      botName: 'TR', // Nome do seu Robô
+      extraStyle: '', // Estilo personalizado para substituir o estilo padrão
+      position: "r", // Posição do chat no rodapé ["l"=esquerda / "r"=direita]
+      ambiente: "p", // ["p"=produção / "t"=teste]
+    })
+  });
+</script>
+    </head>
+    <body>
+        Hello World!
+    </body>
+</html>
